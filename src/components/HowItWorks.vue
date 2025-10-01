@@ -10,7 +10,27 @@
       <div class="steps-grid">
         <div class="step-card" v-for="(step, index) in steps" :key="index">
           <div class="step-number">{{ index + 1 }}</div>
-          <div class="step-icon">{{ step.icon }}</div>
+          <div class="step-icon" aria-hidden="true">
+            <!-- Outline Chat Bubble -->
+            <svg v-if="index === 0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <path d="M21 12a7 7 0 0 1-7 7H9l-4 3v-3a7 7 0 0 1-2-5 7 7 0 0 1 7-7h4a7 7 0 0 1 7 7Z" fill="none"/>
+            </svg>
+            <!-- Outline Magnifying Glass -->
+            <svg v-else-if="index === 1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <circle cx="11" cy="11" r="6" fill="none"/>
+              <path d="M20 20l-3.5-3.5" fill="none"/>
+            </svg>
+            <!-- Outline Shield with Check -->
+            <svg v-else-if="index === 2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <path d="M12 3l7 3v6c0 5-3.5 9-7 9s-7-4-7-9V6l7-3Z" fill="none"/>
+              <path d="M8.5 12.5l2.5 2.5 4.5-4.5" fill="none"/>
+            </svg>
+            <!-- Outline Badge/Check -->
+            <svg v-else viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <circle cx="12" cy="12" r="8" fill="none"/>
+              <path d="M9 12l2 2 4-4" fill="none"/>
+            </svg>
+          </div>
           <h3 class="step-title">{{ step.title }}</h3>
           <p class="step-description">{{ step.description }}</p>
         </div>
@@ -118,8 +138,22 @@ const steps = [
 }
 
 .step-icon {
-  font-size: 4rem;
-  margin: 1rem 0;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+.step-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--color-gold);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .step-title {

@@ -20,7 +20,12 @@ const scrollToSection = (sectionId: string) => {
   <nav class="navbar">
     <div class="container">
       <div class="nav-brand">
-        <span class="brand-icon">🔥</span>
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+            <path d="M12 2s1 3-1 5-2 3-1 5 3 3 3 5a4 4 0 0 1-8 0c0-4 3-6 5-8s2-4 2-7Z" fill="none"/>
+            <path d="M16 9c1 1 2 2 2 5a6 6 0 1 1-12 0" fill="none"/>
+          </svg>
+        </span>
         <span class="brand-text">Santana Admin-FF</span>
       </div>
 
@@ -74,7 +79,19 @@ const scrollToSection = (sectionId: string) => {
 }
 
 .brand-icon {
-  font-size: 1.8rem;
+  display: inline-flex;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.brand-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--color-gold);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .brand-text {

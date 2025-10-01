@@ -6,7 +6,14 @@
 
       <div class="policies-content">
         <div class="policy-card">
-          <div class="policy-icon">📋</div>
+          <div class="policy-icon" aria-hidden="true">
+            <!-- Outline Clipboard -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <rect x="7" y="4" width="10" height="16" rx="2" ry="2" fill="none"/>
+              <path d="M9 4h6v3H9V4Z" fill="none"/>
+              <path d="M9 10h6M9 14h6" fill="none"/>
+            </svg>
+          </div>
           <h3 class="policy-title">Rol de Intermediario</h3>
           <p class="policy-text">
             <strong>Importante:</strong> No vendo cuentas directamente. Mi función es actuar como
@@ -16,7 +23,15 @@
         </div>
 
         <div class="policy-card">
-          <div class="policy-icon">⚖️</div>
+          <div class="policy-icon" aria-hidden="true">
+            <!-- Outline Scales of Justice -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <path d="M12 3v3m0 0 5 3m-5-3-5 3" fill="none"/>
+              <path d="M7 9l-3 5h6L7 9Z" fill="none"/>
+              <path d="M17 9l-3 5h6l-3-5Z" fill="none"/>
+              <path d="M12 6v12M9 21h6" fill="none"/>
+            </svg>
+          </div>
           <h3 class="policy-title">Aviso Legal</h3>
           <p class="policy-text">
             No me hago responsable de cuentas que incumplan las normas de Garena o Free Fire.
@@ -26,7 +41,14 @@
         </div>
 
         <div class="policy-card">
-          <div class="policy-icon">🔒</div>
+          <div class="policy-icon" aria-hidden="true">
+            <!-- Outline Lock -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <rect x="5" y="11" width="14" height="9" rx="2" ry="2" fill="none"/>
+              <path d="M8 11V8a4 4 0 1 1 8 0v3" fill="none"/>
+              <circle cx="12" cy="15" r="1" fill="none"/>
+            </svg>
+          </div>
           <h3 class="policy-title">Seguridad y Transparencia</h3>
           <p class="policy-text">
             Todas las transacciones son verificadas antes de proceder. Solicito información
@@ -36,7 +58,15 @@
         </div>
 
         <div class="policy-card">
-          <div class="policy-icon">💼</div>
+          <div class="policy-icon" aria-hidden="true">
+            <!-- Outline Briefcase -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <rect x="3" y="7" width="18" height="12" rx="2" ry="2" fill="none"/>
+              <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" fill="none"/>
+              <path d="M3 12h18" fill="none"/>
+              <path d="M12 12v2" fill="none"/>
+            </svg>
+          </div>
           <h3 class="policy-title">Compromiso Profesional</h3>
           <p class="policy-text">
             Me comprometo a mantener la confidencialidad de la información compartida, actuar
@@ -105,8 +135,22 @@
 }
 
 .policy-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.policy-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--color-gold);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .policy-title {

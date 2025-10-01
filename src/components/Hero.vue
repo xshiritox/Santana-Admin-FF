@@ -16,7 +16,11 @@ const openWhatsApp = () => {
         Garantizo transacciones seguras y legales. Tu confianza es mi prioridad.
       </p>
       <button class="cta-button" @click="openWhatsApp">
-        <span class="whatsapp-icon">📱</span>
+        <span class="whatsapp-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+            <path d="M19.11 17.39c-.28-.14-1.65-.81-1.9-.9-.26-.1-.45-.14-.64.14-.19.28-.73.9-.89 1.08-.16.19-.33.21-.61.07-.28-.14-1.16-.43-2.2-1.37-.81-.72-1.36-1.61-1.52-1.89-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.49.14-.16.19-.28.28-.47.09-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.56-.47-.49-.64-.5-.16-.01-.35-.01-.54-.01s-.5.07-.76.36c-.26.28-1.01.99-1.01 2.42 0 1.43 1.03 2.81 1.18 3 .14.19 2.03 3.1 4.92 4.35.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33zM16 3C8.83 3 3 8.83 3 16c0 2.3.62 4.46 1.69 6.32L3 29l6.86-1.8C11.63 28.38 13.74 29 16 29c7.17 0 13-5.83 13-13S23.17 3 16 3zm0 23.64c-2.13 0-4.1-.62-5.76-1.68l-.41-.26-4.08 1.08 1.09-3.98-.27-.41A10.61 10.61 0 0 1 5.36 16c0-5.87 4.77-10.64 10.64-10.64S26.64 10.13 26.64 16 21.87 26.64 16 26.64z"/>
+          </svg>
+        </span>
         Contactar por WhatsApp
       </button>
     </div>
@@ -96,7 +100,15 @@ const openWhatsApp = () => {
 }
 
 .whatsapp-icon {
-  font-size: 1.5rem;
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.whatsapp-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #25D366; /* WhatsApp green */
 }
 
 @keyframes fadeInUp {

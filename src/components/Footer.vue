@@ -4,7 +4,13 @@
       <div class="footer-content">
         <div class="footer-brand">
           <h3 class="brand-name">
-            <span class="brand-icon">🔥</span>
+            <span class="brand-icon" aria-hidden="true">
+              <!-- Outline Flame Icon -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+                <path d="M12 2s1 3-1 5-2 3-1 5 3 3 3 5a4 4 0 0 1-8 0c0-4 3-6 5-8s2-4 2-7Z" fill="none"/>
+                <path d="M16 9c1 1 2 2 2 5a6 6 0 1 1-12 0" fill="none"/>
+              </svg>
+            </span>
             FF Admin
           </h3>
           <p class="brand-tagline">
@@ -25,15 +31,35 @@
         <div class="footer-contact">
           <h4>Contacto</h4>
           <div class="contact-item">
-            <span class="contact-icon">📱</span>
+            <span class="contact-icon" aria-hidden="true">
+              <!-- Outline Chat Bubble (WhatsApp) -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+                <path d="M21 12a8 8 0 0 1-8 8H9l-4 3v-3a8 8 0 0 1-4-7 8 8 0 0 1 8-8h4a8 8 0 0 1 8 8Z" fill="none"/>
+              </svg>
+            </span>
             <span>WhatsApp</span>
           </div>
           <div class="contact-item">
-            <span class="contact-icon">📷</span>
+            <span class="contact-icon" aria-hidden="true">
+              <!-- Outline Camera (Instagram) -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+                <rect x="3" y="6" width="18" height="15" rx="4" ry="4" fill="none"/>
+                <circle cx="12" cy="13.5" r="4" fill="none"/>
+                <circle cx="17.5" cy="9.5" r="1" fill="none"/>
+              </svg>
+            </span>
             <span>Instagram</span>
           </div>
           <div class="contact-item">
-            <span class="contact-icon">📘</span>
+            <span class="contact-icon" aria-hidden="true">
+              <!-- Outline Facebook 'f' Logo -->
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+                <rect x="3" y="3" width="18" height="18" rx="4" ry="4" fill="none"/>
+                <path d="M12 7.5h3" fill="none"/>
+                <path d="M12 7.5v9" fill="none"/>
+                <path d="M10.5 11.5h2.5" fill="none"/>
+              </svg>
+            </span>
             <span>Facebook</span>
           </div>
         </div>
@@ -92,7 +118,19 @@ const scrollToSection = (sectionId: string) => {
 }
 
 .brand-icon {
-  font-size: 2rem;
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+}
+
+.brand-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--color-gold);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .brand-tagline {
@@ -135,7 +173,19 @@ const scrollToSection = (sectionId: string) => {
 }
 
 .contact-icon {
-  font-size: 1.3rem;
+  display: inline-flex;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.contact-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--color-gold);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .footer-bottom {

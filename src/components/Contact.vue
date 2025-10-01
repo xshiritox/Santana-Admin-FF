@@ -20,15 +20,35 @@ const openSocial = (platform: string) => {
 
       <div class="social-buttons">
         <button class="social-btn whatsapp" @click="openSocial('whatsapp')">
-          <span class="social-icon">📱</span>
+          <span class="social-icon" aria-hidden="true">
+            <!-- Outline Chat Bubble (WhatsApp) -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <path d="M21 12a8 8 0 0 1-8 8H9l-4 3v-3a8 8 0 0 1-4-7 8 8 0 0 1 8-8h4a8 8 0 0 1 8 8Z" fill="none"/>
+            </svg>
+          </span>
           <span>WhatsApp</span>
         </button>
         <button class="social-btn instagram" @click="openSocial('instagram')">
-          <span class="social-icon">📷</span>
+          <span class="social-icon" aria-hidden="true">
+            <!-- Outline Camera (Instagram) -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <rect x="3" y="6" width="18" height="15" rx="4" ry="4" fill="none"/>
+              <circle cx="12" cy="13.5" r="4" fill="none"/>
+              <circle cx="17.5" cy="9.5" r="1" fill="none"/>
+            </svg>
+          </span>
           <span>Instagram</span>
         </button>
         <button class="social-btn facebook" @click="openSocial('facebook')">
-          <span class="social-icon">📘</span>
+          <span class="social-icon" aria-hidden="true">
+            <!-- Outline Thumbs Up (Facebook) -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="4" ry="4" fill="none"/>
+              <path d="M12 7.5h3" fill="none"/>
+              <path d="M12 7.5v9" fill="none"/>
+              <path d="M10.5 11.5h2.5" fill="none"/>
+            </svg>
+          </span>
           <span>Facebook</span>
         </button>
       </div>
@@ -109,7 +129,19 @@ const openSocial = (platform: string) => {
 }
 
 .social-icon {
-  font-size: 1.5rem;
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.social-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 @media (max-width: 768px) {
