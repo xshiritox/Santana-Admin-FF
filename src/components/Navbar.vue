@@ -21,7 +21,7 @@ const scrollToSection = (sectionId: string) => {
     <div class="container">
       <div class="nav-brand">
         <span class="brand-icon">🔥</span>
-        <span class="brand-text">FF Admin</span>
+        <span class="brand-text">Santana Admin-FF</span>
       </div>
 
       <button class="mobile-toggle" @click="toggleMobileMenu" :class="{ active: mobileMenuOpen }">
