@@ -14,7 +14,13 @@
           </div>
           <p class="testimonial-text">"{{ testimonial.text }}"</p>
           <div class="testimonial-author">
-            <div class="author-avatar">{{ testimonial.avatar }}</div>
+            <div class="author-avatar" aria-hidden="true">
+              <!-- Outline Person Icon -->
+              <svg v-if="testimonial.avatar === 'person'" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+                <circle cx="12" cy="8" r="3" fill="none"/>
+                <path d="M12 12c-4 0-6 2-6 4v1h12v-1c0-2-2-4-6-4Z" fill="none"/>
+              </svg>
+            </div>
             <div class="author-info">
               <h4 class="author-name">{{ testimonial.name }}</h4>
               <p class="author-role">{{ testimonial.role }}</p>
@@ -32,37 +38,37 @@ const testimonials = [
     text: 'Excelente servicio, muy profesional y confiable. La transacción fue rápida y segura. 100% recomendado.',
     name: 'Carlos M.',
     role: 'Comprador',
-    avatar: '👨'
+    avatar: 'person'
   },
   {
     text: 'Vendí mi cuenta sin problemas. Todo el proceso fue transparente y me sentí seguro en todo momento.',
     name: 'María G.',
     role: 'Vendedora',
-    avatar: '👩'
+    avatar: 'person'
   },
   {
     text: 'La mejor experiencia comprando una cuenta. El intermediario verificó todo y me dio confianza total.',
     name: 'Luis R.',
     role: 'Comprador',
-    avatar: '👨'
+    avatar: 'person'
   },
   {
     text: 'Profesional, rápido y honesto. Definitivamente volveré a usar este servicio para futuras transacciones.',
     name: 'Ana P.',
     role: 'Compradora',
-    avatar: '👩'
+    avatar: 'person'
   },
   {
     text: 'Cambié mi cuenta de forma segura y sin complicaciones. El servicio es impecable y siempre responde rápido.',
     name: 'Miguel S.',
     role: 'Comprador',
-    avatar: '👨'
+    avatar: 'person'
   },
   {
     text: 'Me ayudó a vender mi cuenta al mejor precio. Todo fue claro desde el inicio y el pago fue inmediato.',
     name: 'Sandra L.',
     role: 'Vendedora',
-    avatar: '👩'
+    avatar: 'person'
   }
 ]
 </script>
@@ -98,6 +104,24 @@ const testimonials = [
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 4rem;
+}
+
+.author-avatar {
+  display: inline-flex;
+  width: 4rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-avatar svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--color-gold);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .testimonials-grid {
