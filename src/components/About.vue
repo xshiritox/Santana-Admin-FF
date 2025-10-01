@@ -4,7 +4,7 @@
       <div class="about-content">
         <div class="about-image">
           <div class="image-placeholder">
-            <span class="icon">👤</span>
+            <img src="../assets/perfil.jpg" alt="Foto de perfil" />
           </div>
         </div>
         <div class="about-text">
@@ -75,6 +75,14 @@
   justify-content: center;
   border: 3px solid var(--color-gold);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
 }
 
 .icon {
