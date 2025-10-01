@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/vite-env.d.ts","./src/app.vue","./src/components/about.vue","./src/components/contact.vue","./src/components/footer.vue","./src/components/hero.vue","./src/components/howitworks.vue","./src/components/navbar.vue","./src/components/policies.vue","./src/components/testimonials.vue"],"version":"5.9.3"}
