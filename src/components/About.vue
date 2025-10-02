@@ -20,7 +20,7 @@
           <div class="about-features">
             <div class="feature-item">
               <span class="feature-icon">✅</span>
-              <span>100% Transparente</span>
+              <span>100% Confiable</span>
             </div>
             <div class="feature-item">
               <span class="feature-icon">🔒</span>
