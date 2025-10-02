@@ -17,8 +17,8 @@
           <h3 class="policy-title">Rol de Intermediario</h3>
           <p class="policy-text">
             <strong>Importante:</strong> No vendo cuentas directamente. Mi función es actuar como
-            <strong>intermediario profesional</strong> entre compradores y vendedores, garantizando
-            que las transacciones se realicen de forma segura y transparente.
+            <strong>intermediario</strong> entre compradores y vendedores, garantizando
+            que las transacciones se realicen de forma segura y transparente. 
           </p>
         </div>
 
@@ -35,7 +35,7 @@
           <h3 class="policy-title">Aviso Legal</h3>
           <p class="policy-text">
             No me hago responsable de cuentas que incumplan las normas de Garena o Free Fire.
-            Es responsabilidad del vendedor asegurar que la cuenta esté libre de sanciones,
+            Es responsabilidad del comprador asegurar que la cuenta esté libre de sanciones,
             restricciones o violaciones de términos de servicio.
           </p>
         </div>

@@ -49,7 +49,7 @@ const steps = [
   {
     icon: '🔍',
     title: 'Verificación',
-    description: 'Reviso la cuenta de Free Fire, confirmo los datos, estadísticas y que todo esté en orden antes de proceder.'
+    description: 'Reviso la cuenta de Free Fire, confirmo los datos y aseguro que todo esté en orden antes de proceder.'
   },
   {
     icon: '💰',

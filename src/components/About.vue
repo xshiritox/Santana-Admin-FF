@@ -12,13 +12,9 @@
           <div class="title-underline"></div>
           <h3 class="about-name">Tu Intermediario de Confianza</h3>
           <p class="about-description">
-            Soy un administrador profesional especializado en facilitar cambios y ventas de cuentas de Free Fire.
+            Soy un administrador especializado en facilitar cambios y ventas de cuentas de Free Fire.
             Mi trabajo es actuar como intermediario entre compradores y vendedores, garantizando transacciones
-            seguras, transparentes y legales.
-          </p>
-          <p class="about-description">
-            Con años de experiencia en el mercado, he ayudado a cientos de jugadores a realizar sus transacciones
-            de forma confiable. Mi compromiso es ofrecer un servicio profesional donde la <strong>seguridad</strong>
+            seguras, transparentes y legales. Mi compromiso es ofrecer un servicio profesional donde la <strong>seguridad</strong>
             y la <strong>transparencia</strong> son la prioridad.
           </p>
           <div class="about-features">
