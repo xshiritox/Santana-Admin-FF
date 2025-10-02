@@ -11,7 +11,7 @@
                 <path d="M16 9c1 1 2 2 2 5a6 6 0 1 1-12 0" fill="none"/>
               </svg>
             </span>
-            FF Admin
+            Santana Admin-FF
           </h3>
           <p class="brand-tagline">
             Tu intermediario de confianza para transacciones seguras de cuentas de Free Fire
@@ -66,7 +66,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2025 FF Admin. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Santana Admin-FF. Todos los derechos reservados.</p>
         <p class="footer-disclaimer">
           Servicio de intermediación profesional. No afiliado con Garena o Free Fire.
         </p>
