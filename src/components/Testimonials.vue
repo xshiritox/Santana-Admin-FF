@@ -35,38 +35,38 @@
 <script setup lang="ts">
 const testimonials = [
   {
-    text: 'Excelente servicio, muy profesional y confiable. La transacción fue rápida y segura. 100% recomendado.',
-    name: 'Carlos M.',
+    text: 'Nada de estafas todo legal bro gracias',
+    name: 'Carlos',
     role: 'Comprador',
     avatar: 'person'
   },
   {
-    text: 'Vendí mi cuenta sin problemas. Todo el proceso fue transparente y me sentí seguro en todo momento.',
-    name: 'María G.',
-    role: 'Vendedora',
+    text: 'Trato super rapido y confiable gente se los recomiendo',
+    name: 'José Pérez',
+    role: 'Vendedor',
     avatar: 'person'
   },
   {
-    text: 'La mejor experiencia comprando una cuenta. El intermediario verificó todo y me dio confianza total.',
-    name: 'Luis R.',
+    text: '100% recomendado mi gente.',
+    name: 'Luis Rodriguez',
     role: 'Comprador',
     avatar: 'person'
   },
   {
-    text: 'Profesional, rápido y honesto. Definitivamente volveré a usar este servicio para futuras transacciones.',
-    name: 'Ana P.',
-    role: 'Compradora',
-    avatar: 'person'
-  },
-  {
-    text: 'Cambié mi cuenta de forma segura y sin complicaciones. El servicio es impecable y siempre responde rápido.',
-    name: 'Miguel S.',
+    text: 'Gracias mi rey todo totalmente legal, recomendado 100/100',
+    name: 'Bismar',
     role: 'Comprador',
     avatar: 'person'
   },
   {
-    text: 'Me ayudó a vender mi cuenta al mejor precio. Todo fue claro desde el inicio y el pago fue inmediato.',
-    name: 'Sandra L.',
+    text: 'Todo confiable bro gracias',
+    name: 'Miguel Angel',
+    role: 'Comprador',
+    avatar: 'person'
+  },
+  {
+    text: 'Se los recomiendo confiable y rapido',
+    name: 'Sandra',
     role: 'Vendedora',
     avatar: 'person'
   }
