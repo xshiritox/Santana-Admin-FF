@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const openWhatsApp = () => {
-  window.open('https://wa.me/1234567890', '_blank')
+  window.open('https://wa.me/5353547990?text=*SOLICITUD%20DE%20INTERMEDIARIO.*%0A%0AHola%20buenas%2C%20estoy%20interesado%20en%20contratar%20tus%20servicios%20de%20administraci%C3%B3n%20de%20cambios%2C%20compras%20y%20ventas%20de%20cuentas%20de%20Free%20Fire.', '_blank')
 }
 </script>
 
